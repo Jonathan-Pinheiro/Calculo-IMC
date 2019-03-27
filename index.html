@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculo do IMC</h1>
+
+        <form action="">
+            <fieldset>
+                <legend>Seus dados</legend>
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="number" id="altura" placeholder="Altura em Metros Ex 1.54">
+                <input type="number" id="peso" placeholder="Peso em quilos">
+
+                <button type="reset">LIMPAR</button>
+                <button type="button" onclick="calcular()">CALCULAR</button>
+            </fieldset>
+
+
+        </form>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <!--th{coluna$}* qunatidade de colunas-->
+                <th>Nome</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>IMC</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>${dados[i].nome}</td>
+            <td>${dados[i].altura}</td>
+            <td>${dados[i].peso}</td>
+            <td>${dados[i].imc}</td>
+            <td>${dados[i].situacao}</td>
+        </tr>
+        
+        <tr>
+            <td>${dados[i].nome}</td>
+            <td>${dados[i].altura}</td>
+            <td>${dados[i].peso}</td>
+            <td>${dados[i].imc}</td>
+            <td>${dados[i].situacao}</td>
+        </tr>
+        <tbody id="cadastro">
+            
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
